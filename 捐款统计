@@ -4,15 +4,15 @@ int main()
 { 
     int a;
 	float b,tol,ave;
-	for(a=1,tol=0;a<=1200;a++) //Î´ÉêÃ÷tol=0Ê±»áµ¼ÖÂ¡ú
+	for(a=1,tol=0;a<=1200;a++) //tol=0
 	{
-    	printf("ÇëÊäÈë¾è¿î½ð¶î");
+    	printf("plz enter number");
     	scanf("%f",&b);
-	    tol=tol+b;            //¡ú´ËÐÐ²»ÔËÐÐ
+	    tol=tol+b;            
 	    if(tol>=SUM)
 	        break;
 	}
 	ave=tol/a;
-	printf("×ÜÈËÊý%d,Æ½¾ù¾è¿î½ð¶î%f,×Ü½ð¶î%f",a,ave,tol);
+	printf("num%d,averge%f,toteol%f",a,ave,tol);
 	return 0;
 }
