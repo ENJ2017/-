@@ -1,0 +1,18 @@
+#include<stdio.h>
+#define SUM 100000
+int main()
+{ 
+    int a;
+	float b,tol,ave;
+	for(a=1,tol=0;a<=1200;a++) //Î´ÉêÃ÷tol=0Ê±»áµ¼ÖÂ¡ú
+	{
+    	printf("ÇëÊäÈë¾è¿î½ð¶î");
+    	scanf("%f",&b);
+	    tol=tol+b;            //¡ú´ËÐÐ²»ÔËÐÐ
+	    if(tol>=SUM)
+	        break;
+	}
+	ave=tol/a;
+	printf("×ÜÈËÊý%d,Æ½¾ù¾è¿î½ð¶î%f,×Ü½ð¶î%f",a,ave,tol);
+	return 0;
+}
